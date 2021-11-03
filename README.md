@@ -6,5 +6,5 @@ Although slightly long and with little to no optimization or refactoring, it is 
 The calculator can only perform basic arithmetic operations for now. Later more complex operations will be implemented.
 In addition, the operations work only up till the fourth operator. e.g 22 + 33 + 878 + 8778 + 877 , has the plus operator occuring four times.
 This as earlier pointed out is the calculators current limit.
-Other operations like -, x, / all work according to BODMAS
+Other operations like -, x, / all work according to BODMAS.
 Note that the use of special symbols like parenthesis "()" to seperate the operands or numbers, will result in NAN or error.
