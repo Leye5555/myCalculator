@@ -1,3 +1,118 @@
-h1 {
-  color : blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 50vh;
+  max-height: 40rem;
+  max-width: 40rem;
+  margin: auto;
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: #000;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: 0px 8px 40px rgba(98, 98, 98, 0.733);
+}
+.display {
+  width: 100%;
+  height: 20%;
+  background-color: transparent;
+}
+
+.actions {
+  width: 100%;
+  height: 80%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.numbers {
+  display: grid;
+  grid-template-areas:
+    "g h i"
+    "d e f"
+    "a b c"
+    "j k l";
+  flex: 3;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(23, 23, 23) 20%,
+    rgb(47, 47, 47)
+  );
+}
+
+.operators {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+}
+
+.numbers > * {
+  font-size: clamp(1.2rem, 4vw, 3rem);
+  min-width: 30%;
+  min-height: 30%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.operators > * {
+  font-size: clamp(1.2rem, 4vw, 3rem);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.operators > div:last-child {
+  background-image: linear-gradient(45deg, rgb(255, 94, 0), rgb(255, 173, 42));
+}
+
+.num-1 {
+  grid-area: a;
+}
+.num-2 {
+  grid-area: b;
+}
+.num-3 {
+  grid-area: c;
+}
+.num-4 {
+  grid-area: d;
+}
+.num-5 {
+  grid-area: e;
+}
+.num-6 {
+  grid-area: f;
+}
+.num-7 {
+  grid-area: g;
+}
+.num-8 {
+  grid-area: h;
+}
+.num-9 {
+  grid-area: i;
+}
+
+.num-ac {
+  grid-area: j;
+}
+.num-0 {
+  grid-area: k;
+}
+.num-comma {
+  grid-area: l;
 }
