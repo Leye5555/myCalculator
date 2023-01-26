@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./Js/app" defer></script>
+    <script src="./Js/app.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>My Calculator</title>
 </head>
 <body>
     <div class="container">
-        <div class="display"></div>
+        <div class="display"><div class="operation"></div><div class="answer"></div></div>
         <div class="actions">
             <div class="numbers">
-                <button class="num-1">1</button>
-                <button class="num-2">2</button>
-                <button class="num-3">3</button>
-                <button class="num-4">4</button>
-                <button class="num-5">5</button>
-                <button class="num-6">6</button>
-                <button class="num-7">7</button>
-                <button class="num-8">8</button>
-                <button class="num-9">9</button>
-                <button class="num-0">0</button>
-                <button class="num-ac">AC</button>
-                <button class="num-comma">,</button>
+                <button class="num-1" data-type="operand" data-name="one" value="1">1</button>
+                <button class="num-2" data-type="operand" value="2">2</button>
+                <button class="num-3" data-type="operand" value="3">3</button>
+                <button class="num-4" data-type="operand"  value="4">4</button>
+                <button class="num-5" data-type="operand" value="5">5</button>
+                <button class="num-6" data-type="operand" value="6">6</button>
+                <button class="num-7" data-type="operand" value="7">7</button>
+                <button class="num-8" data-type="operand" value="8">8</button>
+                <button class="num-9" data-type="operand" value="9">9</button>
+                <button class="num-0" data-type="operand" value="0">0</button>
+                <button class="num-ac" data-type="operator" value="ac">AC</button>
+                <button class="num-comma" data-type="operand" value=".">.</button>
             </div>
             <div class="operators">
-                <button class="division">➗</button>
-                <button class="subtract">➖</button>
-                <button class="addition">➕</button>
-                <button class="equals">✖️</button>
-                <button class="equals">=</button>
+                <button class="division" data-type="operator" value="/">➗</button>
+                <button class="subtract" data-type="operator" value="-">➖</button>
+                <button class="addition" data-type="operator" value="+">➕</button>
+                <button class="equals" data-type="operator" value="*">✖️</button>
+                <button class="equals" data-type="operator" value="=">=</button>
             </div>
         </div>
     </div>
